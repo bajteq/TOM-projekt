@@ -1,0 +1,4 @@
+1) Rozwiązanie oparte o 2-D UNet jest poprawne.
+2) Zmienna liczba przekrojów nie stanowi problemu - 2-D UNet dokonuje segmetancji "per-slice". Należy nauczyć sieć na kolejnych przekrojach i następnie je połączyć - podobnie w przypadku ewaluacji.
+3) Nie są Państwo w stanie dokonać oceny wyników na przypadkach testowych z uwagi na brak masek segmentacyjnych stanowiących "ground-truth" (chyba, że użyją Państwo systemu na platformie grand-challenge).
+Sugeruje podzielić zbiór z dostępnymi maskami na treningowy i testowy.
